@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    color: white;
+    text-align: center;
+}
+
+/* Pages */
+.page {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.active {
+    display: flex;
+}
+
+/* Headings */
+h1, h2 {
+    text-shadow: 0 0 12px pink, 0 0 25px violet;
+}
+
+/* Buttons */
+button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff77ff, #b266ff);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 20px pink;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 230px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Space theme */
+.space {
+    background: radial-gradient(circle at top, #1a0033, #000);
+}
+
+/* Message */
+.message {
+    color: pink;
+    font-size: 20px;
+    line-height: 1.8;
+    text-shadow: 0 0 15px violet;
+    max-width: 700px;
+}
+
+/* Sparkles */
+.sparkle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
